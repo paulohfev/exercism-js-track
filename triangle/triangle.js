@@ -14,8 +14,7 @@ export class Triangle {
   }
 
   get isEquilateral() {
-    const uniqueSides = this.uniqueSides;
-    return this.isTriangle(this.sides) && uniqueSides.length === 1;
+    return this.isTriangle(this.sides) && this.uniqueSides.length === 1;
   }
 
   get isIsosceles() {
@@ -24,7 +23,6 @@ export class Triangle {
   }
 
   get isScalene() {
-    const uniqueSides = this.uniqueSides;
-    return this.isTriangle(this.sides) && uniqueSides.length === 3;
+    return this.isTriangle(this.sides) && this.uniqueSides.length === 3;
   }
 }
